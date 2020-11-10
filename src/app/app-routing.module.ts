@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CalificarComponent } from './components/calificar/calificar.component';
+
 import { HomeComponent } from './components/home/home.component';
 import { IngresosComponent } from './components/ingresos/ingresos.component';
-import { RakingComponent } from './components/raking/raking.component';
-
+import { RecomendadasComponent } from './components/recomendadas/recomendadas.component';
+import { BusquedaComponent } from './components/busqueda/busqueda.component';
+import { InicioComponent } from './components/inicio/inicio.component';
 const routes : Routes = [ 
     {
         path:'',
@@ -19,9 +20,24 @@ const routes : Routes = [
 
     },
 
+
     {
-        path:'calificar',
-        component:CalificarComponent
+        path:'busqueda',
+        component:BusquedaComponent
+
+    },
+
+    
+    {
+        path:'recomendadas',
+        component:RecomendadasComponent
+
+    },
+
+
+    {
+        path:'inicio',
+        component:InicioComponent
 
     },
 
@@ -29,14 +45,8 @@ const routes : Routes = [
       path:'ingresos',
       component:IngresosComponent
 
-   },
+   }
 
-  {
-    path:'raking',
-    component:RakingComponent
-    
-
-}
     
 ];
 @NgModule ({
